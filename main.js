@@ -17,3 +17,12 @@ function reveal() {
 }
 window.addEventListener("scroll", reveal);
 reveal();
+var typed = new Typed('#Autotype', {
+      strings: ['Software Engineer', 'Full Stack Developer','Web Developer'],
+      typeSpeed: 150,
+      loop:true,
+      backSpeed:150,
+      fadeOut: true,
+      fadeOutClass: 'typed-fade-out',
+      fadeOutDelay: 500,
+    });

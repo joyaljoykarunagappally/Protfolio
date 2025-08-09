@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>My Portfolio</title>
+<title>Joyal Joy</title>
+<link rel="icon" type="image/x-icon" href="./images/favicon.ico">
 <link rel="stylesheet" href="./style.css" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
@@ -32,12 +33,14 @@
 <section id="home" class="home-section reveal">
   <div class="home-content">
     <img src="./images/joyaljoy.png" alt="Joyal Joy" title="Joyal Joy" class="profile-pic" />
-    <h1>Hi, I am a <span>Software Engineer</span></h1>
+    <h1>Hi, I am <span>Joyal Joy</span><br><span id="Autotype"></span></h1>
     <p>Passionate about building modern web applications and solving real-world problems.</p>
     <div class="social-icons">
-      <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://github.com/joyaljoykarunagappally" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/joyal-joy-33a985260" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.facebook.com/share/14Foa2iakG5/" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/j_o_y_a_l__j_o_y" target="_blank"><i class="fab fa fa-instagram"></i></a>
+      <a href="https://wa.me/919605765665?text=Hi,%20Joyal" target="_blank"><i class="fab fa-whatsapp"></i></a>
     </div>
   </div>
 </section>
@@ -73,7 +76,7 @@
     <div class="skill-card"><i class="fas fa-chart-line"></i><p>Power BI</p></div>
     <div class="skill-card"><i class="fab fa-angular"></i><p>Angular</p></div>
     <div class="skill-card"><i class="fas fa-code"></i><p>jQuery</p></div>
-    <div class="skill-card"><i class="fab fa-django"></i><p>Django</p></div>
+    <div class="skill-card"><i class="fab fa-python"></i><p>Django</p></div>
   </div>
 </section>
 
@@ -103,12 +106,12 @@
 <!-- ===== CONTACT ===== -->
 <section id="contact" class="contact-section reveal">
   <h2>Contact Me</h2>
-  <form class="contact-form">
-    <input type="text" placeholder="First Name" required />
-    <input type="text" placeholder="Last Name" required />
-    <input type="email" placeholder="Email" required />
-    <input type="tel" placeholder="Phone Number" required />
-    <textarea placeholder="Your Message" rows="5" required></textarea>
+  <form class="contact-form" action="send.php" method="post">
+    <input type="text" name="first_name" placeholder="First Name" required />
+    <input type="text" name="last_name" placeholder="Last Name" required />
+    <input type="email" name="email" placeholder="Email" required />
+    <input type="tel" name="phone" placeholder="Phone Number" required />
+    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
     <button type="submit">Send Message</button>
   </form>
 </section>
@@ -116,7 +119,7 @@
 <footer>
   <p>&copy; 2025 Joyal Joy | All Rights Reserved</p>
 </footer>
-
+<script src="./typed.umd.js"></script>
 <script src="./main.js"></script>
 </body>
 </html>
